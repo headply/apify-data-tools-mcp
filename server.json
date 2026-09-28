@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.headply/apify-data-tools",
+  "title": "Apify data tools: Threads, Yelp, transcripts, Trends, Airbnb, Jumia",
+  "description": "Web data tools: Threads, Yelp, YouTube/TikTok transcripts, Google Trends, Airbnb, Jumia prices.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/headply/apify-data-tools-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=headply/threads-scraper,headply/threads-keyword-search-scraper,headply/yelp-scraper,headply/yelp-reviews-scraper,headply/tiktok-youtube-transcript-scraper,headply/google-trends-scraper,headply/google-trends-trending-now,headply/airbnb-occupancy-revenue-estimator,headply/airbnb-vrbo-scraper,headply/jumia-price-intelligence",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <Apify API token> (or sign in with OAuth)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
